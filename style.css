@@ -276,7 +276,7 @@ div#panel:before {
 }
 
 #time:before {
-	content: "00:0";: 
+	content: "00:0";
 }
 
 #abort {
