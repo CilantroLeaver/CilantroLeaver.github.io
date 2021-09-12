@@ -48,17 +48,18 @@ button#activate:hover {
 	top: -1.5vmin;
 	transition: all 0.5s ease 0s;
 }
+
 button#activate:active, button#activate.pushed {
 	box-shadow: 0 1vmin 0.15vmin 0vmin #af0000, 0 1vmin 0.15vmin 0vmin #af0000;
 	top: 0.5vmin;
 	transition: all 0.25s ease 0s;
 }
+
 button#activate.pushed {
 	box-shadow: 0 0 20px 10px #ff3c3c, 0 0 100px 50px #ff2828;
 	background: #ff0000;
 	border-bottom: 3px solid #00000020;
 }
-
 
 .box {
 	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
@@ -75,7 +76,7 @@ button#activate.pushed {
 }
 
 .box.opened {
-  transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
+	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
 }
 
 .box div {
@@ -93,28 +94,30 @@ button#activate.pushed {
 .box > div:nth-child(1) {
 	opacity: 0;
 }
+
 .box > div:nth-child(2) {
 	transform: rotateX(90deg) translate3d(0px, 5vmin, 5vmin);
 	height: 10vmin;
 }
+
 .box > div:nth-child(3) {
 	transform: rotateX(0deg) translate3d(0, 0, 10vmin);
 }
+
 .box > div:nth-child(4) {
 	transform: rotateX(270deg) translate3d(0px, -5vmin, 40vmin);
 	height: 10vmin;
 }
+
 .box > div:nth-child(5) {
 	transform: rotateY(90deg) translate3d(-5vmin, 0, 40vmin);
 	width: 10vmin;
 }
+
 .box > div:nth-child(6) {
 	transform: rotateY(-90deg) translate3d(5vmin, 0vmin, 5vmin);
 	width: 10vmin;
 }
-
-
-
 
 .grid {
 	background:repeating-linear-gradient(150deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px ), repeating-linear-gradient(30deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px );
@@ -122,7 +125,6 @@ button#activate.pushed {
 	width: 200vw;
 	height: 150vh;
 }
-
 
 .warning {
 	position: absolute;
@@ -164,16 +166,11 @@ button#activate.pushed {
 	text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
 }
 
-
-
-
-
 .hinges {
-  position: absolute;
+	position: absolute;
 	z-index: 3;
 	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
 }
-
 
 .hinges:before, .hinges:after {
 	content: "";
@@ -188,11 +185,11 @@ button#activate.pushed {
 	box-sizing: border-box;
 	margin-left: -16.25vmin;
 }
-.hinges:after {
-  margin-left: 13.75vmin;
-  margin-top: -24.5vmin;
-}
 
+.hinges:after {
+	margin-left: 13.75vmin;
+	margin-top: -24.5vmin;
+}
 
 .box > span:before, .box > span:after {
 	content: "";
@@ -203,18 +200,15 @@ button#activate.pushed {
 	margin-left: 6vmin;
 	border-radius: 0 0 5px 5px;
 }
+
 .box > span:after  {
-  margin-left: 36vmin;
+	margin-left: 36vmin;
 }
 
 .box > span {
-  transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
-  position: absolute;
+	transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
+	position: absolute;
 }
-
-
-
-
 
 .text {
 	position: absolute;
@@ -229,7 +223,6 @@ button#activate.pushed {
 	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg) translate(33.5vmin, -2vmin);
 	text-align: center;
 	width: 49vmin;
-	
 }
 
 div#panel:before {
@@ -261,6 +254,7 @@ div#panel:before {
 	text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff;
 	animation: warning-ligth 1s 0s infinite;
 }
+
 #panel.show {
 	display: block !important;
 }
@@ -297,23 +291,13 @@ div#panel:before {
 }
 
 #abort:hover {
-  background: #ffffff;
+	background: #ffffff;
 	box-shadow: 0 0 15px 5px #fff;
 }
-
-
-
 
 @keyframes highlight {
 	50% { box-shadow: 0 0 15px 5px #fff;}
 }
-
-
-
-
-
-
-
 
 div#turn-off {
 	position: fixed;
@@ -334,11 +318,11 @@ div#turn-off:before, div#turn-off:after {
 	width: 100vw;
 	transition: height 0.5s ease 0s;
 }
+
 div#turn-off:after {
 	top: inherit;
 	bottom: 0;
 }
-
 
 div#turn-off.close {
 	height: 100vh;
@@ -349,15 +333,13 @@ div#turn-off.close:before, div#turn-off.close:after {
 	height: 49.75vh;
 }
 
-
-
-
 #time.crono {
 	background: #ffffffba;
 	transition: background 0.5s ease 0s;
 	color: #ff0000;
 	text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
+
 #detonate {
 	display: none;
 	color: #fff;
@@ -365,7 +347,8 @@ div#turn-off.close:before, div#turn-off.close:after {
 	font-size: 8vmin;
 	font-family: Arial, Helvetica, serif;
 	text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff;
-}	
+}
+	
 #detonate.show {
 	display: block;
 	animation: blink 0.25s 0s infinite;
@@ -375,17 +358,9 @@ div#turn-off.close:before, div#turn-off.close:after {
 	display: none;
 }
 
-
 @keyframes blink {
 	50% { opacity: 0;}
 }
-
-
-
-
-
-
-
 
 #closing {
 	width: 100vw;
@@ -412,25 +387,22 @@ div#closing:after {
 	left: initial;
 }
 
-
 div#closing.close:before {
 	left: 0;
 	transition: left 0.2s ease 0.2s;
 }
-
 
 div#closing.close:after {
 	right: 0;
 	transition: right 0.2s ease 0.2s;
 }
 
-
-
 #restart {
 	position: absolute;
 	z-index: 8;
 	display: none;
 }
+
 #reload {
 	position: absolute;
 	z-index: 8;
@@ -446,11 +418,13 @@ div#closing.close:after {
 	transition: transform 0.5s ease 0s;
 	outline: none;
 }
+
 #reload:hover {
 	background: #ef0000;
 	transform: rotate(360deg);
 	transition: transform 0.5s ease 0s;
 }
+
 #restart.show { 
 	display: block; 
 }
@@ -460,13 +434,11 @@ div#closing.close:after {
 	opacity:1;
 }
 
-
 @keyframes refresh {
-		0% { opacity: 0; }
-	 50% { opacity: 0; }
+	0% { opacity: 0; }
+	50% { opacity: 0; }
 	100% { opacity: 1; }
 }
-
 
 button#reload:before {
 	content: "";
@@ -489,16 +461,10 @@ button#reload:after {
 	transform: rotate(40deg) translate(0.5vmin, 1.25vmin);
 }
 
-
-
-
-
 @keyframes warning-ligth {
-	 0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
+	0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
 	50% { box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020; }
 }
-
-
 
 #mute {
     position: absolute;
@@ -510,6 +476,7 @@ button#reload:after {
     cursor: pointer;
     border: 0.5vmin solid #151515;
 }
+
 #mute.muted {
     background: #ff000080;
 }
@@ -524,6 +491,7 @@ button#reload:after {
     top: 1.25vmin;
     right: 1.25vmin;
 }
+
 #mute:after {
     content: "";
     border: 0vmin solid transparent;
